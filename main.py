@@ -10,12 +10,12 @@ intents = discord.Intents.default()
 intents.message_content = True 
 client = discord.Client(intents=intents)
 
-command_prefix = '#'
+command_prefix = '!'
 
-# Listening to #location~
+# Listening to !location~
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name='#location~'))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name='!location~'))
 
 @client.event
 async def on_message(message):
