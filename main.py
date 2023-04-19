@@ -3,8 +3,8 @@ import requests
 import json
 from weather import *
 
-token = 'MTA4ODYxNjM0ODk3Mzc5NzQ3Nw.GVYy0P.qbDrGInqhGfR5ggsMNpN_arB4X29GwCoWvKvVQ'
-api_key = 'ea97df2c2ec8f25d19496f0663663094'
+token = 'DISCORD_BOT_TOKEN'
+api_key = 'OPEN_WEATHER_MAP_API_KEY'
 
 intents = discord.Intents.default()
 intents.message_content = True 
